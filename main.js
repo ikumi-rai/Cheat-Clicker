@@ -84,15 +84,15 @@
 		return Array.from(Array(n), (_, k) => k)
 	}
 
-	class CheatButtonsDiv {
+	class ModButtonsDiv {
 		constructor(parent, name) {
 			const div = document.createElement("div")
-			div.id = name + "CheatButtons"
+			div.id = name + "ModButtons"
 			l(parent).insertAdjacentElement("beforeend", div)
 			this.elm = div
 		}
 
-		insertCheatButton(name, ...funcs) {
+		insertModButton(name, ...funcs) {
 			const btn = document.createElement("a")
 			btn.style = "font-size:12px; display:inline-block; margin:4px"
 			btn.className = "smallFancyButton"
@@ -107,19 +107,19 @@
 	class SemiAutoClicker {
 		init() {
 			Game.Win("Third-party")
-			const usual = new CheatButtonsDiv("storeTitle", "usual")
-			usual.insertCheatButton("golden", popGoldenCookie, getAllShimmers)
-			usual.insertCheatButton("lump", dropLump)
-			usual.insertCheatButton("wrinklers", popWrinklers, beatWrinklers)
-			usual.insertCheatButton("news", reloadNews)
-			const miniGame = new CheatButtonsDiv("storeTitle", "miniGame")
-			miniGame.insertCheatButton("grow", growCrops)
-			// miniGame.insertCheatButton("fill", apply(fillField, 34))
-			miniGame.insertCheatButton("crash", apply(manipulateMarket, 0))
-			// miniGame.insertCheatButton("rise", apply(manipulateMarket, 65535))
-			miniGame.insertCheatButton("mp", healMP)
-			// const achieve = new CheatButtonsDiv("storeTitle", "achieve")
-			// achieve.insertCheatButton("achievement", getCheatAchievement)
+			const usual = new ModButtonsDiv("storeTitle", "usual")
+			usual.insertModButton("golden", popGoldenCookie, getAllShimmers)
+			usual.insertModButton("lump", dropLump)
+			usual.insertModButton("wrinklers", popWrinklers, beatWrinklers)
+			usual.insertModButton("news", reloadNews)
+			const miniGame = new ModButtonsDiv("storeTitle", "miniGame")
+			miniGame.insertModButton("grow", growCrops)
+			// miniGame.insertModButton("fill", apply(fillField, 34))
+			miniGame.insertModButton("crash", apply(manipulateMarket, 0))
+			// miniGame.insertModButton("rise", apply(manipulateMarket, 65535))
+			miniGame.insertModButton("mp", healMP)
+			// const achieve = new ModButtonsDiv("storeTitle", "achieve")
+			// achieve.insertModButton("achievement", getCheatAchievement)
 		}
 
 		save() {
