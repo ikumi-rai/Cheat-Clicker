@@ -104,7 +104,7 @@
 		}
 	}
 
-	class CheatClicker {
+	class SemiAutoClicker {
 		init() {
 			Game.Win("Third-party")
 			const usual = new CheatButtonsDiv("storeTitle", "usual")
@@ -129,5 +129,5 @@
 		}
 	}
 
-	Game.registerMod("cheat", new CheatClicker())
+	Game.registerMod("cheat", new SemiAutoClicker())
 })()

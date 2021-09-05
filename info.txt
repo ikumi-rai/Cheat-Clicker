@@ -1,6 +1,6 @@
 {
-	"Name": "Cheat Clicker",
-	"ID": "Cheat Clicker",
+	"Name": "Semi-auto Clicker",
+	"ID": "Semi-auto Clicker",
 	"Author": "ikumi-rai",
 	"Description": "A useful button appears in the upper right corner of the screen.",
 	"ModVersion": 1,

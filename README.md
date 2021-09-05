@@ -1,4 +1,4 @@
-## Cheat-Clicker
+## Semi-auto Clicker
 https://store.steampowered.com/app/1454400/Cookie_Clicker/
 
 This is the cookie clicker MOD.  
