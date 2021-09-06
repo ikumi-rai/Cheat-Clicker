@@ -66,8 +66,10 @@
 		g.magic = g.magicM
 	}
 
-	function getCheatAchievement() {
-		Game.resets = 999  // Endless cycle
+	function getAchievement() {
+		Game.resets = 1000  // Endless cycle
+		Game.fullDate = Date.now() - 365 * 24 * 60 * 60 * 1000  // So much to do so much to see
+		Game.Win("Just plain lucky")
 		/*
 		Game.cookiesPs = 0
 		Game.cookies = 1_000_000_000_000
@@ -119,7 +121,7 @@
 			// miniGame.insertModButton("rise", apply(manipulateMarket, 65535))
 			miniGame.insertModButton("mp", healMP)
 			// const achieve = new ModButtonsDiv("storeTitle", "achieve")
-			// achieve.insertModButton("achievement", getCheatAchievement)
+			// achieve.insertModButton("achievement", getAchievement)
 		}
 
 		save() {
